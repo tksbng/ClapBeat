@@ -23,6 +23,11 @@
 		FF74F4AA179F9C5B006CC66C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74F485179F9C5A006CC66C /* Foundation.framework */; };
 		FF74F4B2179F9C5B006CC66C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF74F4B0179F9C5B006CC66C /* InfoPlist.strings */; };
 		FF74F4B5179F9C5B006CC66C /* ClapBeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74F4B4179F9C5B006CC66C /* ClapBeatTests.m */; };
+		FF74F4C1179F9E04006CC66C /* clap-button.png in Resources */ = {isa = PBXBuildFile; fileRef = FF74F4BE179F9E04006CC66C /* clap-button.png */; };
+		FF74F4C2179F9E04006CC66C /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF74F4BF179F9E04006CC66C /* clap.wav */; };
+		FF74F4C3179F9E04006CC66C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF74F4C0179F9E04006CC66C /* icon.png */; };
+		FF74F4C6179FB38F006CC66C /* Clap.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74F4C5179FB38F006CC66C /* Clap.m */; };
+		FF74F4C8179FB44B006CC66C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74F4C7179FB44B006CC66C /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,12 @@
 		FF74F4B1179F9C5B006CC66C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF74F4B3179F9C5B006CC66C /* ClapBeatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClapBeatTests.h; sourceTree = "<group>"; };
 		FF74F4B4179F9C5B006CC66C /* ClapBeatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClapBeatTests.m; sourceTree = "<group>"; };
+		FF74F4BE179F9E04006CC66C /* clap-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clap-button.png"; sourceTree = "<group>"; };
+		FF74F4BF179F9E04006CC66C /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
+		FF74F4C0179F9E04006CC66C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FF74F4C4179FB38F006CC66C /* Clap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clap.h; sourceTree = "<group>"; };
+		FF74F4C5179FB38F006CC66C /* Clap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clap.m; sourceTree = "<group>"; };
+		FF74F4C7179FB44B006CC66C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF74F4C8179FB44B006CC66C /* AudioToolbox.framework in Frameworks */,
 				FF74F484179F9C5A006CC66C /* UIKit.framework in Frameworks */,
 				FF74F486179F9C5A006CC66C /* Foundation.framework in Frameworks */,
 				FF74F488179F9C5A006CC66C /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +99,9 @@
 		FF74F477179F9C5A006CC66C = {
 			isa = PBXGroup;
 			children = (
+				FF74F4BE179F9E04006CC66C /* clap-button.png */,
+				FF74F4BF179F9E04006CC66C /* clap.wav */,
+				FF74F4C0179F9E04006CC66C /* icon.png */,
 				FF74F489179F9C5A006CC66C /* ClapBeat */,
 				FF74F4AD179F9C5B006CC66C /* ClapBeatTests */,
 				FF74F482179F9C5A006CC66C /* Frameworks */,
@@ -106,6 +121,7 @@
 		FF74F482179F9C5A006CC66C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF74F4C7179FB44B006CC66C /* AudioToolbox.framework */,
 				FF74F483179F9C5A006CC66C /* UIKit.framework */,
 				FF74F485179F9C5A006CC66C /* Foundation.framework */,
 				FF74F487179F9C5A006CC66C /* CoreGraphics.framework */,
@@ -123,6 +139,8 @@
 				FF74F49E179F9C5B006CC66C /* ViewController.h */,
 				FF74F49F179F9C5B006CC66C /* ViewController.m */,
 				FF74F48A179F9C5B006CC66C /* Supporting Files */,
+				FF74F4C4179FB38F006CC66C /* Clap.h */,
+				FF74F4C5179FB38F006CC66C /* Clap.m */,
 			);
 			path = ClapBeat;
 			sourceTree = "<group>";
@@ -236,6 +254,9 @@
 				FF74F498179F9C5B006CC66C /* Default@2x.png in Resources */,
 				FF74F49A179F9C5B006CC66C /* Default-568h@2x.png in Resources */,
 				FF74F49D179F9C5B006CC66C /* MainStoryboard.storyboard in Resources */,
+				FF74F4C1179F9E04006CC66C /* clap-button.png in Resources */,
+				FF74F4C2179F9E04006CC66C /* clap.wav in Resources */,
+				FF74F4C3179F9E04006CC66C /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +294,7 @@
 				FF74F490179F9C5B006CC66C /* main.m in Sources */,
 				FF74F494179F9C5B006CC66C /* AppDelegate.m in Sources */,
 				FF74F4A0179F9C5B006CC66C /* ViewController.m in Sources */,
+				FF74F4C6179FB38F006CC66C /* Clap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

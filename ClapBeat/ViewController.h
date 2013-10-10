@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Clap.h"
+@interface ViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 
-@interface ViewController : UIViewController
 
 @end
